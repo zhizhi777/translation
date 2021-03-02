@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="change">
+    <navigator url="/pages/change/change" hover-class="navigator-hover">
+      <text>到{{curLang.chs}}</text>
+      <text class="iconfont icon-down"></text>
+    </navigator>
+  </view>
+  <view class="input-area">
+    <text class="iconfont icon-close" hidden="{{hasShow}}" bindtap="onTapClose"></text>
+    <view class="textarea-wrap">
+      <textarea placeholder="请输入要翻译的文本" value="{{query}}" bindinput="onInput" bindblur="outInput" bindconfirm="outInput"></textarea>
+    </view>
+    <view class="text-area">
+      <text class="title">译文</text>
+      <textarea placeholder="" value="{{result[0].dst}}" disabled="true"></textarea>
+      <!-- <view class="text-result" wx:for="{{result}}" wx:key="index">
+        <text selectable="true">{{item.dst}}</text>
+      </view> -->
+    </view>
+  </view>
+  <view class="copyright">
+    <text>© 2021 zhizhi777</text>
+  </view>
+</view>

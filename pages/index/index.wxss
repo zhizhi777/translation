@@ -1,0 +1,41 @@
+/**index.wxss**/
+.change{
+  color: #8995a1;
+  padding: 20rpx 40rpx;
+  font-size: 24rpx;
+  display: flex;
+  align-items: center;
+}
+.change .icon-down {
+  color: #8995a1;
+  font-size: 16rpx;
+  margin-left: 2px;
+}
+
+.input-area{
+  background-color: #fff;
+  position: relative;
+}
+.input-area .icon-close{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 99;
+  font-size: 28rpx;
+}
+.input-area .textarea-wrap{
+  padding: 40rpx;
+  font-size: 32rpx;
+  border-bottom: 1px solid #c7cee0; 
+}
+.textarea-wrap textarea{
+  min-height: 120px;
+  width: 100%;
+}
+.input-area .text-area{
+  padding: 40rpx;
+}
+.text-area .title{
+  font-size: 28rpx;
+  color: #8995a1;
+}
